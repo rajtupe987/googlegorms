@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+.required>span {
+    color: red;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Adjust the layout of text elements */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style single-line text elements */
+.single-line-text {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5;
+    /* Adjust line height for better readability */
+    min-height: 30px;
+    /* Minimum height for the line */
+}
+
+.single-line-text:empty::before {
+    content: attr(data-placeholder);
+    color: #aaa;
+}
+
+/* Add some spacing between form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#linear {
+    border: solid 1px rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#linear:hover {
+    border-color: #673ab7;
+}
+
+#linear_scale {
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+}
+
+
+#linear_scale>span {
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Adjust the layout of options and input elements */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style multi-choice grid */
+.multi-choice-grid {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Add spacing between rows */
+.multi-choice-grid tr {
+    margin-bottom: 10px;
+    /* Adjust this value for your desired spacing */
+}
+
+.multi-choice-grid th,
+.multi-choice-grid td {
+    padding: 10px;
+    text-align: center;
+    background-color: #f9fafc;
+    margin-top: 2px;
+}
+
+.multi-choice-grid td {
+    border: 1px solid #fdfdfd;
+    padding: 30px;
+}
+
+.multi-choice-grid th {
+    background-color: #fefdfd;
+}
+
+.multi-choice-grid input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.form-group input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+
+.form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+/* Add some spacing between form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+#tick_grid {
+    margin-top: 30px;
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#tick_grid:hover {
+    border-color: #673ab7;
+}
+
+#multi_grid {
+    margin-top: 30px;
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#multi_grid {
+    border-color: #673ab7;
+}
+
+#paragraph {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#paragraph:hover {
+    border-color: #673ab7;
+}
+
+#short_ans {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#short_ans:hover {
+    border-color: rgb(82, 23, 232);
+}
+
+#top_fill {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mcq {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mcq:hover {
+    border-color: rgb(82, 23, 232);
+}
+
+#check_box {
+    border: 1px solid rgb(179, 177, 177);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#check_box:hover {
+    border-color: rgb(82, 23, 232);
+}
+
+#top_fill>span {
+    color: red
+}
+
+span {
+    font-size: 20px;
+}
+
+#top_fill>p {
+    color: #7b7b7b;
+}
+
+#end {
+    display: flex;
+    gap: 500px;
+
+}
+
+#end>div>p {
+    color: #673ab7;
+
+}
+
+#end>div>p:hover {
+    cursor: pointer;
+}

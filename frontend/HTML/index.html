@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="cloned-form" class="form_data">
+            <div class="form-header" id="top_fill">
+                <h1>Assignment Task</h1>
+                <hr>
+                <p>The name and photo associated with your Google Account will be recorded when you upload files and
+                    submit this form. Your email address is not part of your response.</p>
+                <hr>
+                <span>* Indicates required question</span>
+            </div>
+            <!-- MCQ -->
+            <div class="form-group" id="mcq">
+                <label class="required">MCQ <span>*</span></label>
+                <label><input type="radio" name="mcq" value="Option 1"> Option 1</label>
+                <label><input type="radio" name="mcq" value="Option 2"> Option 2</label>
+                <label><input type="radio" name="mcq" value="Option 3"> Option 3</label>
+            </div>
+            <!-- Checkbox -->
+            <div class="form-group" id="check_box">
+                <label class="required">Checkbox <span>*</span></label>
+                <label><input type="checkbox" name="checkbox" value="Option 1"> Option 1</label>
+                <label><input type="checkbox" name="checkbox" value="Option 2"> Option 2</label>
+                <label><input type="checkbox" name="checkbox" value="Option 3"> Option 3</label>
+            </div>
+
+            <!-- Short Answer -->
+            <div class="form-group" id="short_ans">
+                <label class="required">Short Answer <span>*</span></label>
+                <p class="single-line-text" contenteditable="true" data-placeholder="Enter your short answer here"></p>
+            </div>
+
+            <!-- Paragraph -->
+            <div class="form-group" id="paragraph">
+                <label class="required">Paragraph <span>*</span></label>
+                <p class="single-line-text" contenteditable="true" data-placeholder="Enter your paragraph here"></p>
+            </div>
+
+            <!-- Linear Scale -->
+            <div class="form-group" id="linear">
+                <label class="required">Linear Scale <span>*</span></label>
+                <div class="linear-scale" id="linear_scale">
+                    <span>Worst</span>
+                    <label><input type="radio" name="linear-scale" value="1"> 1</label>
+                    <label><input type="radio" name="linear-scale" value="2"> 2</label>
+                    <label><input type="radio" name="linear-scale" value="3"> 3</label>
+                    <label><input type="radio" name="linear-scale" value="4"> 4</label>
+                    <label><input type="radio" name="linear-scale" value="5"> 5</label>
+                    <span>Best</span>
+                </div>
+            </div>
+
+
+            <!-- Multi Choice Grid -->
+            <div class="form-group" id="multi_grid">
+                <label class="required">Multi Choice Grid <span>*</span></label>
+                <table class="multi-choice-grid">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1</td>
+                            <td><input type="radio" name="mcg-row1-col1"></td>
+                            <td><input type="radio" name="mcg-row1-col2"></td>
+                            <td><input type="radio" name="mcg-row1-col3"></td>
+                        </tr>
+                        <tr>
+                            <td>Row 2</td>
+                            <td><input type="radio" name="mcg-row2-col1"></td>
+                            <td><input type="radio" name="mcg-row2-col2"></td>
+                            <td><input type="radio" name="mcg-row2-col3"></td>
+                        </tr>
+                        <tr>
+                            <td>Row 3</td>
+                            <td><input type="radio" name="mcg-row3-col1"></td>
+                            <td><input type="radio" name="mcg-row3-col2"></td>
+                            <td><input type="radio" name="mcg-row3-col3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Multi Choice Grid -->
+            <div class="form-group" id="tick_grid">
+                <label class="required">Tick box Grid <span>*</span></label>
+                <table class="multi-choice-grid">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1</td>
+                            <td><input type="checkbox" name="mcg-row1-col1"></td>
+                            <td><input type="checkbox" name="mcg-row1-col2"></td>
+                            <td><input type="checkbox" name="mcg-row1-col3"></td>
+                        </tr>
+                        <tr>
+                            <td>Row 2</td>
+                            <td><input type="checkbox" name="mcg-row2-col1"></td>
+                            <td><input type="checkbox" name="mcg-row2-col2"></td>
+                            <td><input type="checkbox" name="mcg-row2-col3"></td>
+                        </tr>
+                        <tr>
+                            <td>Row 3</td>
+                            <td><input type="checkbox" name="mcg-row3-col1"></td>
+                            <td><input type="checkbox" name="mcg-row3-col2"></td>
+                            <td><input type="checkbox" name="mcg-row3-col3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div id="end">
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="form-group" id="clear-form">
+                    <p type="button" id="clear-button">Clear Form</p>
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script src="../scr/index.js"></script>
